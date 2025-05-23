@@ -18,33 +18,33 @@
       layer_0 {
 bindings = <
   &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
-  &kp KC_TAB &rt_ctrl &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
-  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &kp sftent
-  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo L13 &kp space &mo L23 &kp left &kp down &kp up &kp right
+  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
+  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
+  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
 >;
       };
       layer_1 {
 bindings = <
-  &kp reset &kp rgb_tog &kp rgb_mod &kp rgb_hud &kp rgb_hui &kp rgb_sad &kp rgb_sai &kp rgb_vad &kp rgb_vai &kp trns &kp trns &kp trns
-  &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp left &kp down &kp up &kp right &kp trns &kp trns
-  &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp ms_l &kp ms_d &kp ms_u &kp ms_r &kp trns &kp trns
-  &kp trns &kp trns &kp trns &kp trns &kp trns &kp bspace &kp trns &kp wh_l &kp wh_u &kp wh_d &kp wh_r
+  &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
+  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
+  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
+  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
 >;
       };
       layer_2 {
 bindings = <
-  &kp grave &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &kp delete
-  &kp escape &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp minus &kp equal &kp lbracket &kp rbracket &kp bslash
-  &kp trns &kp grave &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns
-  &kp application &kp rctrl &kp ralt &kp rgui &kp trns &kp delete &kp trns &kp trns &kp trns &kp trns &kp trns
+  &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
+  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
+  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
+  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
 >;
       };
       layer_3 {
 bindings = <
-  &kp f1 &kp f2 &kp f3 &kp f4 &kp f5 &kp f6 &kp f7 &kp f8 &kp f9 &kp f10 &kp f11 &kp f12
-  &kp capslock &kp 0x5d5e &kp 0x5d5f &kp 0x5d61 &kp 0x5d60 &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns &kp trns
-  &kp trns &kp 0x5d63 &kp 0x5d62 &kp 0x5d65 &kp 0x5d64 &kp trns &kp trns &kp btn1 &kp btn2 &kp trns &kp trns &kp trns
-  &magic_swap_lctl_lgui &magic_unswap_lctl_lgui &kp trns &kp trns &kp trns &kp mply &kp trns &kp mprv &kp vold &kp _volup &kp volu
+  &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
+  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
+  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
+  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
 >;
       };
     };
