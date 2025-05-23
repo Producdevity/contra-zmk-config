@@ -8,45 +8,39 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT  0
+#define NUM_MODS 1
+#define BT_CTRL  2
+
 / {
-  keymap {
-    compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-    default_layer = <0>;
+        default_layer {
+            bindings = <
+    &kp ESC   &kp Q     &kp W    &kp E     &kp R       &kp T      &kp Y     &kp U        &kp I     &kp O     &kp P    &kp BSPC
+    &kp TAB   &kp A     &kp S    &kp D     &kp F       &kp G      &kp H     &kp J        &kp K     &kp L     &kp SEMI &kp SQT
+    &kp LSHFT &kp Z     &kp X    &kp C     &kp V       &kp B      &kp N     &kp M        &kp COMMA &kp DOT   &kp FSLH &kp ENTER
+    &kp hypr &kp LCTRL  &kp LALT &kp LGUI  &to DEFAULT &kp SPACE  &trans    &to NUM_MODS &kp LEFT  &kp RIGHT &kp UP   &kp DOWN
+            >;
+        };
 
-    layers {
-      layer_0 {
-bindings = <
-  &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
-  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
-  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
-  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
->;
-      };
-      layer_1 {
-bindings = <
-  &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
-  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
-  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
-  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
->;
-      };
-      layer_2 {
-bindings = <
-  &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
-  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
-  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
-  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
->;
-      };
-      layer_3 {
-bindings = <
-  &kp gesc &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p &kp bspace
-  &mt LCTL TAB &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp scolon &kp quote
-  &kp lshift &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp comma &kp dot &kp slash &mt RSFT ENTER
-  &mod_hypr &kp lctrl &kp lalt &kp lgui &mo 1 &kp space &mo 2 &kp left &kp down &kp up &kp right
->;
-      };
+        num_mods {
+            bindings = <
+    &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4      &kp N5     &kp N6    &kp N7      &kp N8    &kp N9    &kp N0   &kp DEL
+    &kp TAB   &kp F1    &kp F2   &kp F3   &kp F4      &kp F5     &kp F6    &kp MINUS   &kp PG_UP &kp LBKT  &kp RBKT &kp BSLH
+    &kp LSHFT &kp F7    &kp F8   &kp F9   &kp F10     &kp F11    &kp F12   &kp EQUAL   &kp PG_DN &kp HOME  &kp END  &kp ENTER
+    &kp hypr &kp LCTRL  &kp LALT &kp LGUI &to DEFAULT &kp SPACE  &trans    &mo BT_CTRL &kp LEFT  &kp RIGHT &kp UP   &kp DOWN
+            >;
+        };
+
+        bt_control {
+            bindings = <
+    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans    &trans    &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &trans     &trans     &trans   &trans
+    &trans     &trans       &trans       &trans       &trans       &trans       &trans    &trans    &bt BT_PRV &bt BT_NXT &trans   &trans
+            >;
+        };
     };
-  };
 };
